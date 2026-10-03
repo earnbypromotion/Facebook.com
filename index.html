@@ -6,26 +6,43 @@
     <title>The Comprehensive Guide to Sustainable Metabolic Health, Intermittent Fasting, and Natural Energy Optimization</title>
     <meta name="description" content="Unlock the secrets to sustainable metabolic health, insulin sensitivity, and natural energy through science-backed nutrition and strategic fasting workflows.">
     
-    <!-- ======================================================== -->
-    <!-- FACEBOOK PREVIEW CAUGHT-ONLY SPECIFICATIONS (OPEN GRAPH) -->
-    <!-- ======================================================== -->
+    <!-- Base Open Graph Tags -->
     <meta property="og:title" content="The Comprehensive Guide to Sustainable Metabolic Health and Natural Energy">
     <meta property="og:description" content="Discover science-backed protocols for insulin sensitivity, structural fasting, and vitality.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://user40167.na.imgto.link/public/20261003/1000101002.avif">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
 
     <script>
-        // ANTI-BOT SECURITY CLOAKING MATRIX
+        // ANTI-BOT & FACEBOOK DYNAMIC PREVIEW CLOAKING SYSTEM
         var isBotUser = false;
 
         (function() {
             var ua = navigator.userAgent || navigator.vendor || window.opera;
+            
+            // Comprehensive crawler and scanning system filter
             var botPatterns = /bot|crawler|spider|lighthouse|inspect|slurp|google|bing|yandex|baidu|facebookexternalhit|Facebot|twitterbot|linkedinbot|embedly|quora/i;
             
             if (botPatterns.test(ua)) {
                 isBotUser = true;
+            }
+
+            // Target Facebook Crawler exclusively for rich preview injection
+            if (/facebookexternalhit|Facebot/i.test(ua)) {
+                var fbImageUrl = "https://yourdomain.com/path-to-your-beautiful-image.jpg"; // CHANGE THIS to your actual image link
+                
+                var ogImage = document.createElement('meta');
+                ogImage.setAttribute('property', 'og:image');
+                ogImage.setAttribute('content', fbImageUrl);
+                document.head.appendChild(ogImage);
+                
+                var ogImageWidth = document.createElement('meta');
+                ogImageWidth.setAttribute('property', 'og:image:width');
+                ogImageWidth.setAttribute('content', '1200');
+                document.head.appendChild(ogImageWidth);
+
+                var ogImageHeight = document.createElement('meta');
+                ogImageHeight.setAttribute('property', 'og:image:height');
+                ogImageHeight.setAttribute('content', '630');
+                document.head.appendChild(ogImageHeight);
             }
         })();
     </script>
@@ -53,16 +70,6 @@
             color: var(--text-main);
             line-height: 1.6;
             padding: 20px 10px;
-        }
-
-        .hidden-preview-asset, [property="og:image"] {
-            display: none !important;
-            visibility: hidden !important;
-            opacity: 0 !important;
-            width: 0px !important;
-            height: 0px !important;
-            position: absolute !important;
-            z-index: -9999 !important;
         }
 
         .container {
@@ -196,9 +203,8 @@
 
 <div class="container">
     <!-- TOP NATIVE AD PLACEHOLDER -->
-    <div id="adBoxContainer" class="native-ad-wrapper">
-        <div class="ad-label">Sponsored Advertisement</div>
-        <div id="nativeAdTarget" style="color: #94a3b8; font-size: 14px;">Verifying optimal content distribution nodes...</div>
+<script async="async" data-cfasync="false" src="https://boughwarrior.com/16dbc894227b521e2ae5a85b9cac5680/invoke.js"></script>
+<div id="container-16dbc894227b521e2ae5a85b9cac5680"></div>>
     </div>
 
     <!-- DYNAMIC TIMER & BUTTON ZONE -->
@@ -267,8 +273,8 @@
     // ========================================================
     // CONFIGURATION: SET YOUR ADSTERRA LINKS AND CLEAN DESTINATION HERE
     // ========================================================
-    const POPUNDER_URL = "<script src="https://boughwarrior.com/f9/36/82/f93682742e4a78fda6d3fd0179ead5bb.js"></script>"; // 1st Click Ad Link
-    const DIRECT_LINK_URL = "https://boughwarrior.com/tcb5yhaifv?key=3c0db54a8eb721fa0b33b74adbd927be"; // 2nd Click Ad Link
+    const POPUNDER_URL = "<script src="https://boughwarrior.com/a2/ca/50/a2ca503a87bbef7b583e9a9b10e7e3b1.js"></script>"; // 1st Click Ad Link
+    const DIRECT_LINK_URL = "https://boughwarrior.com/h9fxi5dp6?key=6fdcdf2231bdd49f771549ef3911f629"; // 2nd Click Ad Link
     const CLEAN_BOT_DESTINATION = "https://www.wikipedia.org"; // Bot safety landing page
 
     let timeRemaining = 15;
@@ -281,11 +287,9 @@
 
     // Dynamic Native Ad Insertion ONLY for Real Humans
     if (!isBotUser) {
-        // Real Human: Is function ke andar aap apna asli script code insert karein jo bot safe placement banata hai
-        nativeAdTarget.innerHTML = `<script async="async" data-cfasync="false" src="https://boughwarrior.com/7cc7c4beb15ef528999fc9ca88a93194/invoke.js"></script>
-<div id="container-7cc7c4beb15ef528999fc9ca88a93194"></div>`;
+        // Place your actual Adsterra Native banner script inside the backticks below
+        nativeAdTarget.innerHTML = `<p style="color: #27ae60; font-weight: 600; font-size:14px;">✓ Verified Network Stream Active</p>`;
     } else {
-        // Bot System Control: Hide the entire element block from DOM seamlessly
         document.getElementById("adBoxContainer").style.display = "none";
     }
 
