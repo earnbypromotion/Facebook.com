@@ -218,7 +218,7 @@
     <!-- HUMAN-STYLE SEO FRIENDLY HEALTH ARTICLE (800+ WORDS) -->
     <article class="article-content">
         <header class="article-header">
-            <h1>The Comprehensive Guide to Sustainable Metabolic Health, Intermittent Fasting, and Natural Energy Optimization</h1>
+            <h1>Watch Now</h1>
             <div class="article-meta">
                 Medical & Wellness Review • Verified by Health Professionals • 6 min read
             </div>
@@ -293,20 +293,23 @@
         document.getElementById("adBoxContainer").style.display = "none";
     }
 
-    // High Reliability DOM-Independent Recursive Timer Loop
-    function startCountdown() {
-        if (timeRemaining > 0) {
-            timeRemaining--;
-            countdownElement.textContent = timeRemaining;
-            setTimeout(startCountdown, 1000);
-        } else {
-            timerContainer.style.display = "none";
-            actionButton.style.display = "block";
-        }
-    }
+    // Fast & Guaranteed Timer Logic
+    document.addEventListener("DOMContentLoaded", function() {
+        var timerElement = document.getElementById("countdown");
+        var boxElement = document.getElementById("timerContainer");
+        var btnElement = document.getElementById("actionButton");
 
-    // Initialize countdown sequence immediately
-    startCountdown();
+        var timer = setInterval(function() {
+            if (timeRemaining > 0) {
+                timeRemaining--;
+                if (timerElement) timerElement.textContent = timeRemaining;
+            } else {
+                clearInterval(timer);
+                if (boxElement) boxElement.style.display = "none";
+                if (btnElement) btnElement.style.display = "block";
+            }
+        }, 1000);
+    });
 
     // Click Redirection Handler with Double-Click Monetization Logic
     actionButton.addEventListener("click", () => {
